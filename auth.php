@@ -16,8 +16,8 @@ curl_setopt($curl,CURLOPT_URL,$link);
 curl_setopt($curl,CURLOPT_POST,true);
 curl_setopt($curl,CURLOPT_POSTFIELDS,http_build_query($user));
 curl_setopt($curl,CURLOPT_HEADER,false);
-curl_setopt($curl,CURLOPT_COOKIEFILE,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
-curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt'); #PHP>5.3.6 dirname(__FILE__) -> __DIR__
+curl_setopt($curl,CURLOPT_COOKIEFILE,dirname(__FILE__).'/cookie.txt');
+curl_setopt($curl,CURLOPT_COOKIEJAR,dirname(__FILE__).'/cookie.txt');
 curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
 curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
 
